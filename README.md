@@ -1,6 +1,9 @@
 # super-screen-saver (sss)
 screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
 
+>[!CAUTION]
+>Currently being ported to bash
+
 # demo
 ![demo](sss.gif)
 
