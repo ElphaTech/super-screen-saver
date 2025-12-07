@@ -1,76 +1,43 @@
 # super-screen-saver (sss)
-screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
+a terminal screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver 
 
->[!CAUTION]
->Currently being ported to bash
+[Demo](#demo) | [Prerequisites](#prerequisites) | [Usage](#usage) | [License](#license)
 
-# demo
-![demo](sss.gif)
+# Demo
+![demo](demo.gif)
 
-## Table of Contents
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
-## Installation 
-
+# Prerequisites
 > [!IMPORTANT]
 >
-> All commands below should be run in the terminal.
+>This script needs [terminaltexteffects](https://github.com/ChrisBuilds/terminaltexteffects) to be installed.
 
-1. Clone the repository & move into it:  
-   ```bash
-   git clone git@github.com:silentfin/super-screen-saver.git
-   cd super-screen-saver
-   ```
+# Usage
 
-2. Set up a virtual environment & activate it:
-   - Linux/macOS:  
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```  
-   - Windows:  
-     ```bash
-     python -m venv .venv
-     .\.venv\Scripts\activate
-     ```  
+> [!NOTE]
+>
+> Replace `logo.txt` with your own custom ascii-art
 
-3. Install dependencies:  
+1. Clone the repository:
+```
+git clone https://github.com/silentfin/super-screen-saver.git
+```
 
-    > [!WARNING]
-    >
-    >Make sure the virtual environment is activated before running the install command.
+2. Navigate into the directory:
+```
+cd super-screen-saver
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```  
+3. Make the script executable:
+```
+chmod +x ./sss.sh
+```
 
-## Usage
-> [!CAUTION]
->
-> Activate your virtual environment before running the script.
-- Linux/macOS:  
-    ```bash    
-    python3 main.py
-    ```  
-- Windows:  
-    ```bash
-    python main.py
-    ```
-*Press `CTRL + C` to stop the script.*
->[!TIP]
->
->```alias sss='(cd /add_your_path_here/super-screen-saver && source .venv/bin/activate && python3 main.py)'```
->
-> Add this alias in your `.bashrc`, `.zshrc` or `.whatever_you_use_rc`
->
-> Replace `/add_your_path_here/super-screen-saver` in the alias with the actual full path where you cloned the repository.
->
-> Reload your terminal after adding the alias.
->
-> Now whenever you type `sss` in the terminal, the script will run without manually activating the virtual environment and will deactivate the virtual environment once the script is stopped.
+4. Run the screensaver!
+```
+./sss.sh
+```
+
+5. To stop the screensaver, press `Ctrl+C`.
 
 ## License
 This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for more details.
