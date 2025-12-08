@@ -30,10 +30,6 @@ effects=($(tte -h | grep -E '^\s{4}[a-z]+' | awk '{print $1}'))
 while true; do
     effects_shuffled=($(shuf -e "${effects[@]}"))
     for effect in "${effects_shuffled[@]}"; do
-    read -t 0.1 -n 1 key
-    if [[ $key == "q" ]]; then
-        exit 0
-    fi
     tte -i "$input_file" --canvas-width 0 --canvas-height 0 --anchor-text c --frame-rate "$FRAME_RATE" "$effect"
     clear
     done
