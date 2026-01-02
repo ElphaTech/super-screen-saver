@@ -15,8 +15,8 @@ a terminal screensaver script inspired by [omarchy's](https://omarchy.org/) scre
 
 > [!NOTE]
 >
-> Replace `logo.txt` with your own custom ascii-art.
-> [ascii text generator](https://patorjk.com/software/taag/#p=display&f=Delta+Corps+Priest+1&t=silentfin)
+> Replace `logo.txt` with your own custom ascii-art.  
+>You can use an [ASCII text generator](https://patorjk.com/software/taag/#p=display&f=Delta+Corps+Priest+1&t=silentfin) to create your own.
 
 1. Clone the repository:
 ```
